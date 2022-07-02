@@ -44,7 +44,7 @@ app.post('/F3S6dHe5dMX9gbN47PgE7TmqTsLzLebP', async (req, res) => {
 	} catch (error) {
 		console.log(error);
 		res.status(200).send({
-			message: error,
+			message: error.message,
 		});
 	}
 });
