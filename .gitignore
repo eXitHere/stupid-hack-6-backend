@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/expressionengine,windows,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=expressionengine,windows,macos
 
+node_modules
+
 ### ExpressionEngine ###
 .DS_Store
 
