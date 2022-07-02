@@ -2,6 +2,7 @@ const express = require('express');
 const requestIp = require('request-ip');
 const mongoose = require('mongoose');
 const path = require('path');
+const cors = require('cors');
 
 require('dotenv').config({
 	path: path.resolve(__dirname, '../.env'),
@@ -21,6 +22,7 @@ mongoose
 	});
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(requestIp.mw());
 
